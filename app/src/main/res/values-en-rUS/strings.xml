@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Calculate Building Space</string>
+    <string name="intro_app">To calculate the area or perimeter of a parallelogram, enter the input first!</string>
+    <string name="alas">Base</string>
+    <string name="tinggi">Height</string>
+    <string name="luas">Area</string>
+    <string name="keliling">Perimeter</string>
+    <string name="hitung">Calculate</string>
+    <string name="hasil_luas">Area: %1$.2f</string>
+    <string name="hasil_keliling">Perimeter: %1$.2f</string>
+    <string name="input_invalid">Can not be empty.</string>
+    <string name="share">Share</string>
+    <string name="share_text">Base: %1$s cm Height: %2$s cm Formula: %3$s Result: %4$.2f cm</string>
+    <string name="back">Back</string>
+    <string name="fitur_app">What is a Parallelogram?</string>
+    <string name="konten_app">A parallelogram is a two-dimensional flat shape which, if you look at its shape, is almost like A
+        quadrilateral that has two parallel edges facing each other. Then, a parallelogram can also be interpreted as a side four
+        formed by two pairs of parallel lines with angles that are not 90 degrees or not right angles. \n\nCopyright © 2024 - 2025 Haikel Nur Kamil. \nAll rights reserved.</string>
+    <string name="konten_image">Image %1$s</string>
+</resources>

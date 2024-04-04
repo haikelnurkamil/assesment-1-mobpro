@@ -1,3 +1,24 @@
 <resources>
-    <string name="app_name">Unknown</string>
+    <string name="app_name">Hitung Bangun Ruang</string>
+
+    <string name="intro_app">Menghitung luas atau keliling jajar genjang, Masukan Input terlebih dahulu!</string>
+
+    <string name="alas">Alas</string>
+    <string name="tinggi">Tinggi</string>
+    <string name="luas">Luas</string>
+    <string name="keliling">Keliling</string>
+
+    <string name="hitung">Hitung</string>
+    <string name="hasil_luas">Luas: %1$.2f</string>
+    <string name="hasil_keliling">Keliling: %1$.2f</string>
+    <string name="input_invalid">Tidak Boleh Kosong.</string>
+    <string name="share">Bagikan</string>
+    <string name="share_text">Alas: %1$s cm Tinggi: %2$s cm Rumus: %3$s  Hasil: %4$.2f cm</string>
+
+    <string name="back">Kembali</string>
+    <string name="fitur_app">Apa itu Jajar Genjang?</string>
+    <string name="konten_image">Gambar %1$s</string>
+    <string name="konten_app">Jajar genjang merupakan bangun datar dua dimensi yang jika dilihat dari bentuknya hampir seperti
+        segi empat yang memiliki dua rusuk sejajar serta saling berhadapan. Lalu, jajar genjang juga bisa diartikan sebagai segi
+        empat yang dibentuk oleh dua pasang garis sejajar dengan sudut yang tidak 90 derajat atau tidak siku-siku. \n\nHak Cipta © 2024 - 2025 Haikel Nur Kamil. \nSemua hak dilindungi undang-undang.</string>
 </resources>

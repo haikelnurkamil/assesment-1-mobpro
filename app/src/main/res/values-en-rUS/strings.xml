@@ -7,11 +7,12 @@
     <string name="luas">Area</string>
     <string name="keliling">Perimeter</string>
     <string name="hitung">Calculate</string>
+    <string name="ulang">Reset</string>
     <string name="hasil_luas">Area: %1$.2f</string>
     <string name="hasil_keliling">Perimeter: %1$.2f</string>
     <string name="input_invalid">Can not be empty.</string>
     <string name="share">Share</string>
-    <string name="share_text">Base: %1$s cm Height: %2$s cm Formula: %3$s Result: %4$.2f cm</string>
+    <string name="share_text">Base: %1$s cm \nHeight: %2$s cm \nFormula: %3$s \nResult: %4$.2f cm</string>
     <string name="back">Back</string>
     <string name="fitur_app">What is a Parallelogram?</string>
     <string name="konten_app">A parallelogram is a two-dimensional flat shape which, if you look at its shape, is almost like A

@@ -7,11 +7,14 @@ import android.content.res.Configuration
 import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.IntrinsicSize
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Row
+import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.selection.selectable
 import androidx.compose.foundation.shape.RoundedCornerShape
@@ -173,28 +176,53 @@ fun ScreenContent(modifier: Modifier) {
                 )
             }
         }
-
-        Button(
-            onClick = {
-                alasError = (alas == "" || alas == "0")
-                tinggiError = (tinggi == "" || tinggi == "0")
-                if(alasError || tinggiError) return@Button
-
-                when (rumus) {
-                    radioOptions[0] -> {
-                        hasil = hitungLuasJajarGenjang(alas.toFloat(), tinggi.toFloat())
-                    }
-                    radioOptions[1] -> {
-                        hasil = hitungKelilingJajarGenjang(alas.toFloat(), tinggi.toFloat()).toFloat()
-                    }
-                }
-            },
-            modifier = Modifier.padding(top = 8.dp),
-            contentPadding = PaddingValues(horizontal = 32.dp, vertical = 16.dp)
+        Row(
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(horizontal = 64.dp),
+            horizontalArrangement = Arrangement.Center
         ) {
-            Text(text = stringResource(R.string.hitung))
-        }
+            Button(
+                onClick = {
+                    alasError = (alas == "" || alas == "0")
+                    tinggiError = (tinggi == "" || tinggi == "0")
+                    if (alasError || tinggiError) return@Button
 
+                    when (rumus) {
+                        radioOptions[0] -> {
+                            hasil = hitungLuasJajarGenjang(alas.toFloat(), tinggi.toFloat())
+                        }
+
+                        radioOptions[1] -> {
+                            hasil = hitungKelilingJajarGenjang(
+                                alas.toFloat(),
+                                tinggi.toFloat()
+                            ).toFloat()
+                        }
+                    }
+                },
+                modifier = Modifier
+                    .weight(1f)
+                    .width(IntrinsicSize.Min),
+                contentPadding = PaddingValues(horizontal = 32.dp, vertical = 16.dp)
+            ) {
+                Text(text = stringResource(R.string.hitung))
+            }
+            Spacer(modifier = Modifier.width(16.dp))
+            Button(
+                onClick = {
+                    alas = ""
+                    tinggi = ""
+                    rumus = radioOptions[0]
+                    hasil = 0f
+                    alasError = false
+                    tinggiError = false
+                },
+                contentPadding = PaddingValues(horizontal = 32.dp, vertical = 16.dp)
+            ) {
+                Text(text = stringResource(id = R.string.ulang))
+            }
+        }
         if (hasil != 0f) {
             Divider(
                 modifier = Modifier.padding(vertical = 8.dp),

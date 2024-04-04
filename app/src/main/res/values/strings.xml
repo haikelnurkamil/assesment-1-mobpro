@@ -9,11 +9,12 @@
     <string name="keliling">Keliling</string>
 
     <string name="hitung">Hitung</string>
+    <string name="ulang">Ulang</string>
     <string name="hasil_luas">Luas: %1$.2f</string>
     <string name="hasil_keliling">Keliling: %1$.2f</string>
     <string name="input_invalid">Tidak Boleh Kosong.</string>
     <string name="share">Bagikan</string>
-    <string name="share_text">Alas: %1$s cm Tinggi: %2$s cm Rumus: %3$s  Hasil: %4$.2f cm</string>
+    <string name="share_text">Alas: %1$s cm \nTinggi: %2$s cm \nRumus: %3$s  \nHasil: %4$.2f cm</string>
 
     <string name="back">Kembali</string>
     <string name="fitur_app">Apa itu Jajar Genjang?</string>
